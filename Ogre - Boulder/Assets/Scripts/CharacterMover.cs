@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : MonoBehaviour
 {
-    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f;
+    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, rotationSpeed = 10f;
 
     private Vector3 position;
     private CharacterController controller;
@@ -18,7 +18,10 @@ public class CharacterMover : MonoBehaviour
 
     void Update()
     {
-        position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
+        position.Set(0, 0, Input.GetAxis("Vertical") * moveSpeed);
+        rotation.y = rotationSpeed * Input.GetAxis("Horizontal");
+        controller.transform.Rotate(rotation);
+
         if (controller.isGrounded)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -34,6 +37,7 @@ public class CharacterMover : MonoBehaviour
 
         position.y -= gravity * Time.deltaTime;
         controller.Move(position * Time.deltaTime);
+        
 
     }
 }
