@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b887661b52884fbf82c806c02b5abff6, type: 3}
+  m_Name: Mover
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  jumpSpeed: 30
+  gravity: 3
+  jumpData: {fileID: 11400000, guid: dd0184fd58fba30439d04abab3d8ee45, type: 2}
