@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e79256f88c419bb7da4318e5746511, type: 3}
-  m_Name: IntData
+  m_Script: {fileID: 11500000, guid: 8864d2d8ce7402c43beca71f42103ae3, type: 3}
+  m_Name: BoolDataTrigger
   m_EditorClassIdentifier: 
-  value: 1
-  maxValue: 2
+  value: 0

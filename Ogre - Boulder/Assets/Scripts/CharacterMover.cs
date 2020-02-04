@@ -1,26 +1,39 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-[CreateAssetMenu]
-public class CharacterMover : ScriptableObject
+[RequireComponent(typeof(CharacterController))]
+public class CharacterMover : MonoBehaviour
 {
-    public float moveSpeed = 10f, jumpSpeed = 30f, gravity = 3f;
-    private Vector3 position;
-    public IntData jumpData;
-    
-    public void MoveCharacter(CharacterController controller)
-    {
-        position.x = moveSpeed * Input.GetAxis("Horizontal");
-        position.z = moveSpeed * Input.GetAxis("Vertical");
-        position.y -= gravity;
+    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f;
 
-        if (Input.GetButton("Jump") && jumpData.value < jumpData.maxValue)
+    private Vector3 position;
+    private CharacterController controller;
+
+    void Start()
+    {
+        controller = GetComponent<CharacterController>();
+    }
+
+    void Update()
+    {
+        position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
+        if (controller.isGrounded)
         {
-            position.y = jumpSpeed;
-            jumpData.value++;
-        } else if (controller.isGrounded)
-        {
-            position.y = 0;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                position.y = jumpSpeed;
+            }
         }
+
+        if (position != Vector3.zero)
+        {
+            controller.transform.forward = position;
+        }
+
+        position.y -= gravity * Time.deltaTime;
         controller.Move(position * Time.deltaTime);
+
     }
 }
