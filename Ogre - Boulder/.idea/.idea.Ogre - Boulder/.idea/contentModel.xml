@@ -263,6 +263,7 @@
         <e p="Scripts" t="Include">
           <e p="BehaviourID.cs" t="Include" />
           <e p="Booldata.cs" t="Include" />
+          <e p="CameraMovement.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="CheckBoolData.cs" t="Include" />
           <e p="IDSystem.cs" t="Include" />

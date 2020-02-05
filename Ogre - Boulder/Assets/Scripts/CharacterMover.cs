@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Numerics;
 using UnityEngine;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
+
 
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : MonoBehaviour
 {
     public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, rotationSpeed = 10f;
 
-    private Vector3 position;// rotation;
+    private Vector3 position;
     private CharacterController controller;
 
     void Start()
@@ -16,11 +17,12 @@ public class CharacterMover : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
+    
+
     void Update()
     {
-        position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
-        //rotation.y = rotationSpeed * Input.GetAxis("Horizontal");
-        //controller.transform.Rotate(rotation);
+        //position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
+       
 
         if (controller.isGrounded)
         {
@@ -36,8 +38,8 @@ public class CharacterMover : MonoBehaviour
         }
 
         position.y -= gravity * Time.deltaTime;
-        controller.Move(position * Time.deltaTime);
+        controller.Move( position * Time.deltaTime);
+        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Camera.main.transform.localEulerAngles.y, transform.localEulerAngles.z);
         
-
     }
 }
