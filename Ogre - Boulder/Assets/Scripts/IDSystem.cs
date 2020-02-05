@@ -6,7 +6,6 @@ public class IDSystem : MonoBehaviour
 {
     public List<NameID> IDNameObj;
 
-
     private void OnTriggerEnter(Collider other)
     {
         var nameIdObj = other.GetComponent<BehaviourID>().IDNameObj;
@@ -22,8 +21,5 @@ public class IDSystem : MonoBehaviour
 
             }
         }
-
     }
-
-
 }

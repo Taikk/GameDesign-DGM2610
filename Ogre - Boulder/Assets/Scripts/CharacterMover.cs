@@ -8,7 +8,7 @@ public class CharacterMover : MonoBehaviour
 {
     public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, rotationSpeed = 10f;
 
-    private Vector3 position;
+    private Vector3 position;// rotation;
     private CharacterController controller;
 
     void Start()
@@ -18,9 +18,9 @@ public class CharacterMover : MonoBehaviour
 
     void Update()
     {
-        position.Set(0, 0, Input.GetAxis("Vertical") * moveSpeed);
-        rotation.y = rotationSpeed * Input.GetAxis("Horizontal");
-        controller.transform.Rotate(rotation);
+        position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
+        //rotation.y = rotationSpeed * Input.GetAxis("Horizontal");
+        //controller.transform.Rotate(rotation);
 
         if (controller.isGrounded)
         {
