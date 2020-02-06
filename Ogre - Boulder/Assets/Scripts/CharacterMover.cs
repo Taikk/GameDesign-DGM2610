@@ -21,7 +21,7 @@ public class CharacterMover : MonoBehaviour
 
     void Update()
     {
-        //position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
+        position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
        
 
         if (controller.isGrounded)
@@ -39,7 +39,6 @@ public class CharacterMover : MonoBehaviour
 
         position.y -= gravity * Time.deltaTime;
         controller.Move( position * Time.deltaTime);
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Camera.main.transform.localEulerAngles.y, transform.localEulerAngles.z);
-        
+
     }
 }
