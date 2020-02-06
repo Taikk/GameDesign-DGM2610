@@ -10,6 +10,7 @@ public class BehaviourID : MonoBehaviour
     public void EnterTrigger()
     {
         EnterEvent.Invoke();
+
     }
 
     public void ExitTrigger()

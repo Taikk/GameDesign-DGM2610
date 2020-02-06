@@ -1,5 +1,6 @@
 ﻿using System.Numerics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
@@ -7,9 +8,9 @@ using Vector3 = UnityEngine.Vector3;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : MonoBehaviour
 {
-    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, rotationSpeed = 10f;
+    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, turnSpeed = 10f, speed = 0f;
 
-    private Vector3 position;
+    private Vector3 position, mDir;
     private CharacterController controller;
 
     void Start()
@@ -22,7 +23,7 @@ public class CharacterMover : MonoBehaviour
     void Update()
     {
         position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
-       
+
 
         if (controller.isGrounded)
         {
@@ -38,7 +39,8 @@ public class CharacterMover : MonoBehaviour
         }
 
         position.y -= gravity * Time.deltaTime;
-        controller.Move( position * Time.deltaTime);
+
+       controller.Move(position * Time.deltaTime);
 
     }
 }
