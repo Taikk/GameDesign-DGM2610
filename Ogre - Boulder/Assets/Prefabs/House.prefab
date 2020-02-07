@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7269644919277775433}
   - component: {fileID: 8110941830704566760}
   - component: {fileID: 7362666855157909712}
-  - component: {fileID: 1847827063925915156}
   - component: {fileID: 2397310210199005277}
   - component: {fileID: -8612010250895354676}
+  - component: {fileID: 5768298373866645851}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -95,40 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1, z: 1.4}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1847827063925915156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203937975480453437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390370a8e01b6745ae39e74307dc874, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IDNameObj: {fileID: 11400000, guid: 1b1cdf072055d614f85750d4d7dd59dc, type: 2}
-  EnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4173619060510936123}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  ExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!65 &2397310210199005277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -158,6 +124,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5768298373866645851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203937975480453437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcbcc90ac1701a40b46ad25c3837b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IDNameObj:
+  - {fileID: 11400000, guid: 9a12e7be60bc7b04b9ba094074ef6c37, type: 2}
 --- !u!1 &4173619060510936123
 GameObject:
   m_ObjectHideFlags: 0
