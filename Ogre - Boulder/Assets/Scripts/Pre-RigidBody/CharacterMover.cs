@@ -1,46 +1,31 @@
-﻿using System.Numerics;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using Quaternion = UnityEngine.Quaternion;
+﻿using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
-
 
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : MonoBehaviour
 {
-    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, turnSpeed = 10f, speed = 0f;
+    public float moveSpeed = 0f, jumpSpeed = 0f, gravity = 9.81f, rotationSpeed = 60f;
 
-    private Vector3 position, mDir;
-    private CharacterController controller;
-
-    void Start()
-    {
-        controller = GetComponent<CharacterController>();
-    }
-
-    
+    private Vector3 moveDirection = Vector3.zero;
 
     void Update()
     {
-        position.Set(Input.GetAxis("Horizontal") * moveSpeed, 0, Input.GetAxis("Vertical") * moveSpeed);
-
-
+        CharacterController controller = GetComponent<CharacterController>();
+        
+        moveDirection.y -= gravity * Time.deltaTime; //Gravity Effects
+        
         if (controller.isGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                position.y = jumpSpeed;
-            }
+            moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical")); //movement controls
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= moveSpeed;
+
+            if (Input.GetButton("Jump")) //checking for input of jump button
+                moveDirection.y = jumpSpeed;
+            
         }
-
-        if (position != Vector3.zero)
-        {
-            controller.transform.forward = position;
-        }
-
-        position.y -= gravity * Time.deltaTime;
-
-       controller.Move(position * Time.deltaTime);
-
+        transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0); //Player Rotation
+        
+        controller.Move(moveDirection * Time.deltaTime); //frame rate
     }
 }

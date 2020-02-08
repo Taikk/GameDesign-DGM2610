@@ -18,6 +18,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A6BB1E07-E811-405E-8130-84A5C27EF139/f4/3e4749ae/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NameID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Transoformer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -38,13 +40,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IDSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RigidController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/BehaviourID.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/IDSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Transform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Transoformer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RigidController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/CharacterMover.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +104,8 @@
       <workItem from="1580932138899" duration="5042000" />
       <workItem from="1581014781022" duration="6642000" />
       <workItem from="1581053109285" duration="657000" />
-      <workItem from="1581105425806" duration="2013000" />
+      <workItem from="1581105425806" duration="2725000" />
+      <workItem from="1581122393823" duration="3513000" />
     </task>
     <servers />
   </component>
