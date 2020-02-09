@@ -265,6 +265,7 @@
           <e p="CameraController.cs" t="Include" />
           <e p="IDSystem.cs" t="Include" />
           <e p="NameID.cs" t="Include" />
+          <e p="positionTransformer.cs" t="Include" />
           <e p="Pre-RigidBody" t="Include">
             <e p="Booldata.cs" t="Include" />
             <e p="CharacterMover.cs" t="Include" />

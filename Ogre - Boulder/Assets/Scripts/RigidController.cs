@@ -6,21 +6,22 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class RigidController : MonoBehaviour
 {
-    public float moveSpeed = 0f, rotateSpeed = 0f;
+    public float speed;
 
-    private Vector3 moveDirection = Vector3.zero;
     private Rigidbody rb;
 
-    void Update()
+    void Start ()
     {
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-        Quaternion desiredRotation = Quaternion.LookRotation(rb.velocity);
-        transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, Time.deltaTime);
+        rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void FixedUpdate ()
     {
-        GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime);
+        float moveHorizontal = Input.GetAxis ("Horizontal");
+        float moveVertical = Input.GetAxis ("Vertical");
+
+        Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+
+        rb.AddForce (movement * speed);
     }
 }
-

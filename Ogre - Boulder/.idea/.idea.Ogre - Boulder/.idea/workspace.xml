@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RigidController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/positionTransformer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/CharacterMover.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,7 +37,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CheckBoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NameID.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BehaviourID.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMover.cs" />
@@ -46,8 +46,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Transform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Transoformer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RigidController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/CharacterMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RigidController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BehaviourID.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/positionTransformer.cs" />
       </list>
     </option>
   </component>
@@ -105,7 +108,9 @@
       <workItem from="1581014781022" duration="6642000" />
       <workItem from="1581053109285" duration="657000" />
       <workItem from="1581105425806" duration="2725000" />
-      <workItem from="1581122393823" duration="3513000" />
+      <workItem from="1581122393823" duration="4238000" />
+      <workItem from="1581186569306" duration="7360000" />
+      <workItem from="1581280871953" duration="962000" />
     </task>
     <servers />
   </component>
