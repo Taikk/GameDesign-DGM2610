@@ -6,17 +6,16 @@ public class IDSystem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var nameIdObj = other.GetComponent<BehaviourID>().IDNameObj;
+        var nameIdObj = other.GetComponent<BehaviourID>();
         if (nameIdObj == null) return;
-        var otherNameID = nameIdObj;
+        var otherNameID = nameIdObj.IDNameObj;
         
         foreach (var ID in IDNameObj)
         {
             if (ID == otherNameID)
             {
-                Debug.Log(ID);
+                nameIdObj.EnterTrigger();
                 return;
-
             }
         }
     }
