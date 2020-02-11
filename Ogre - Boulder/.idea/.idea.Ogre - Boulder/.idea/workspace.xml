@@ -57,9 +57,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Debugger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityEventUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vector3Follow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LookAtSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityEventUpdate.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +121,7 @@
       <workItem from="1581186569306" duration="7360000" />
       <workItem from="1581280871953" duration="962000" />
       <workItem from="1581378593459" duration="1315000" />
-      <workItem from="1581437150918" duration="3357000" />
+      <workItem from="1581437150918" duration="3999000" />
     </task>
     <servers />
   </component>
