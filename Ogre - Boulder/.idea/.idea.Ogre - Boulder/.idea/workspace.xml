@@ -47,10 +47,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Transform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Transoformer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pre-RigidBody/CharacterMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RigidController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BehaviourID.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/positionTransformer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RigidController.cs" />
       </list>
     </option>
   </component>
@@ -111,6 +111,7 @@
       <workItem from="1581122393823" duration="4238000" />
       <workItem from="1581186569306" duration="7360000" />
       <workItem from="1581280871953" duration="962000" />
+      <workItem from="1581378593459" duration="1315000" />
     </task>
     <servers />
   </component>
