@@ -7,6 +7,10 @@ public class Enemy : MonoBehaviour
 {
     public bool trig;
     public float radius;
+
+    public float nextFire, fireRate;
+
+    public GameObject projectilePreFab;
     void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
@@ -16,5 +20,16 @@ public class Enemy : MonoBehaviour
     public void AttackTrigger()
     {
         trig = true;
+        AttackTarget();
+    }
+
+    private void AttackTarget()
+    {
+        if (trig == true && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(projectilePreFab, transform.position + new Vector3(0, .8f, 0), Quaternion.identity);
+            Debug.Log(("Throw Object"));
+        }
     }
 }

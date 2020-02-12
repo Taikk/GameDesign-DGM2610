@@ -8,7 +8,7 @@ public class IDSystem : MonoBehaviour
     {
         var nameIdObj = other.GetComponent<BehaviourID>();
         if (nameIdObj == null) return;
-        var otherNameID = nameIdObj.IDNameObj;
+        var otherNameID = nameIdObj.nameIdObj;
         
         foreach (var ID in IDNameObj)
         {

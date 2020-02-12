@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class BehaviourID : MonoBehaviour
 {
-    public NameID IDNameObj;
+    public NameID nameIdObj;
     public UnityEvent EnterEvent, ExitEvent;
     
     public void EnterTrigger()
