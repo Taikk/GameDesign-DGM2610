@@ -8,7 +8,7 @@ public class MatchID : MonoBehaviour
     public UnityEvent OnMatch, NoMatch;
     public bool MatchMade { private get; set; }
 
-    private void OnParticleTrigger(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         var otherId = other.GetComponent<MatchID>();
         if (otherId == null) return;
