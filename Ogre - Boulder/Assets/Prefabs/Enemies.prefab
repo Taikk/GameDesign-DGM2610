@@ -12,14 +12,15 @@ GameObject:
   - component: {fileID: 105559761596882510}
   - component: {fileID: 8378100241414384004}
   - component: {fileID: 8638019612397860174}
-  - component: {fileID: 4168398998236149441}
+  - component: {fileID: 1136204474898996274}
+  - component: {fileID: -2686418389885210733}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6932472481944302257
 Transform:
   m_ObjectHideFlags: 0
@@ -94,7 +95,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.7, z: 0}
---- !u!114 &4168398998236149441
+--- !u!114 &1136204474898996274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,42 +104,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2166584312775173175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b390370a8e01b6745ae39e74307dc874, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7f1220e274a64409a7ba41cdbf8175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameIdObj: {fileID: 11400000, guid: 1322691bd8d28bd4f9b16ebb55d6d31b, type: 2}
-  EnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: AttackTrigger
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: c4c9b3059aba6f449a448524de618a04, type: 2}
-        m_MethodName: OnDebug
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Trigger Marty
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  ExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  nameIdObj: {fileID: 11400000, guid: 56551d74b026f114b8fdfd43e1ce3e37, type: 2}
+  workSystemManagerObj: {fileID: 11400000, guid: 373672e1ed852d740b07f7ea30b32427,
+    type: 2}
+--- !u!114 &-2686418389885210733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166584312775173175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708b8e923643a7841a2707762fbe59ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2166584312775173175}
 --- !u!1 &5782014998218929766
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +187,7 @@ MonoBehaviour:
         m_MethodName: LookDirection
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 75e08ad94397c8247a3237596eebbb45,
+          m_ObjectArgument: {fileID: 11400000, guid: c560402dc8339d14ab9d3702ae191810,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: Vector3Follow, Assembly-CSharp
           m_IntArgument: 0

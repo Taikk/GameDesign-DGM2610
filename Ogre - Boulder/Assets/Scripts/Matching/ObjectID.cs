@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ObjectID : MonoBehaviour
 {
-    public NameID ID;
+    [FormerlySerializedAs("ID")] public NameId id;
 }
