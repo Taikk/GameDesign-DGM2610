@@ -15,5 +15,5 @@ MonoBehaviour:
   workIdList:
   - nameIdObj: {fileID: 11400000, guid: 91d44c1da6c55b54e81b9334223d28c2, type: 2}
     workSystemObj: {fileID: 11400000, guid: 2fb16bc4fcd94ff4b8690b703f6732eb, type: 2}
-  - nameIdObj: {fileID: 11400000, guid: 91d44c1da6c55b54e81b9334223d28c2, type: 2}
+  - nameIdObj: {fileID: 11400000, guid: 56551d74b026f114b8fdfd43e1ce3e37, type: 2}
     workSystemObj: {fileID: 11400000, guid: 214d6e3a9fca97d46add3bc25b94f7af, type: 2}

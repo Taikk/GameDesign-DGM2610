@@ -10,7 +10,12 @@ using Object = UnityEngine.Object;
 [CreateAssetMenu(menuName = "Single Variables/FloatData")]
 public class FloatData : NameId
 {
-    [FormerlySerializedAs("Value")] public float value;
+    public float value;
+
+    public virtual float Value
+    {
+        get { return value; }
+    }
 
     
     public void SetValue (float amount)
