@@ -12,9 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c154c4a15eb3640aa2a0f55a44b8fc, type: 3}
   m_Name: CharacterMovement
   m_EditorClassIdentifier: 
-  MoveX: {fileID: 0}
-  MoveY: {fileID: 0}
-  MoveZ: {fileID: 0}
-  RotX: {fileID: 0}
-  RotY: {fileID: 0}
-  RotZ: {fileID: 0}
+  RotY: {fileID: 11400000, guid: 9acc8a8144307b2468bd3420a738b0ad, type: 2}
+  MoveX: {fileID: 11400000, guid: 176bf1c0b1b6cd547ac2961db311f159, type: 2}
