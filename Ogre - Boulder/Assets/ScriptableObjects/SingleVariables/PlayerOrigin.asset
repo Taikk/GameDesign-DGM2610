@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059a6d5d89068da41b50847bf2ca9717, type: 3}
   m_Name: PlayerOrigin
   m_EditorClassIdentifier: 
-  location: {x: 51, y: 7.5242767, z: -57.5}
+  location: {x: -63.61195, y: 6.683481, z: -30.137999}
