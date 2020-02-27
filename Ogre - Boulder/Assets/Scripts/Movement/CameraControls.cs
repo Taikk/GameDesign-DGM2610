@@ -6,7 +6,7 @@ public class CameraControls : MonoBehaviour
 {
     public GameObject player;
 
-    private Vector3 cameraOffset;
+    public Vector3 cameraOffset;
 
     private void Start()
     {

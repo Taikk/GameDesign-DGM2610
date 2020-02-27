@@ -13,10 +13,8 @@ GameObject:
   - component: {fileID: 469883708300525521}
   - component: {fileID: 1238550026414277423}
   - component: {fileID: 2303447928313317166}
-  - component: {fileID: 6173402064788293081}
-  - component: {fileID: 7196913390003550525}
-  - component: {fileID: 2556326552551704067}
-  - component: {fileID: -6688009316814468570}
+  - component: {fileID: -7305853253668994933}
+  - component: {fileID: -4175637346480635791}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -31,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8035641059408086168}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 51.9, y: 8.69, z: -61.19}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
@@ -63,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7f6764cf78f1dff4ba1fb2bd6b379d4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,7 +95,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!135 &2303447928313317166
 SphereCollider:
@@ -112,7 +110,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6173402064788293081
+--- !u!114 &-7305853253668994933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,11 +119,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8035641059408086168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f425cff2085e03d429011d7ddbe304db, type: 3}
+  m_Script: {fileID: 11500000, guid: b1b5498acf3ca5d428dd0a7bf237ffb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
---- !u!114 &7196913390003550525
+  ForwardForce: 0
+--- !u!114 &-4175637346480635791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,50 +132,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8035641059408086168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350f7d2b02fd80c44974c0f4731ed5d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 50a7545ec94a3fc429866e421659b631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaOfEffect: 2
-  rigidbody: {fileID: 1238550026414277423}
---- !u!114 &2556326552551704067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8035641059408086168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7f1220e274a64409a7ba41cdbf8175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameIdObj: {fileID: 11400000, guid: 56551d74b026f114b8fdfd43e1ce3e37, type: 2}
-  workSystemManagerObj: {fileID: 0}
---- !u!114 &-6688009316814468570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8035641059408086168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b9f2fb9ad63a1646b0268b505d6495f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnUpdateEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c560402dc8339d14ab9d3702ae191810, type: 2}
-        m_MethodName: UpdateData
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 4349074714988189791}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  ResetZone: 0.5
+  rb: {fileID: 1238550026414277423}
+  objectData: {fileID: 11400000, guid: ccc34f98ddbca3d4ca401ab6a8f6fc81, type: 2}
