@@ -123,6 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ForwardForce: 0
+  scale: 2
+  leftRotation: {x: 0, y: 2, z: 0}
+  rightRotation: {x: 0, y: -2, z: 0}
+  dirArrow: {fileID: 0}
 --- !u!114 &-4175637346480635791
 MonoBehaviour:
   m_ObjectHideFlags: 0
