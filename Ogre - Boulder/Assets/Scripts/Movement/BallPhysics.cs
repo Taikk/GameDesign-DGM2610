@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BallPhysics : MonoBehaviour
 {
-    public float ForwardForce = 0f, scale = 2;
+    public float forwardForce = 0f;
+    public float scale = 2;
     public Vector3 leftRotation, rightRotation;
     public GameObject dirArrow;
 
@@ -12,27 +14,27 @@ public class BallPhysics : MonoBehaviour
     {
         if (Input.GetKeyDown("q"))
         {
-            ForwardForce += 100f;
+            forwardForce += 100f;
             scale += 1f;
-            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, scale, 1);
+            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, 1, scale);
         }
         if (Input.GetKeyDown("w"))
         {
-            ForwardForce -= 100f;
+            forwardForce -= 100f;
             scale -= 1f;
-            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, scale, 1);
+            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, 1, scale);
         }
         if (Input.GetKeyDown("e"))
         {
-            ForwardForce += 10f;
+            forwardForce += 10f;
             scale += .1f;
-            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, scale, 1);
+            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, 1, scale);
         }
         if (Input.GetKeyDown("r"))
         {
-            ForwardForce -= 10f;
+            forwardForce -= 10f;
             scale -= .1f;
-            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, scale, 1);
+            dirArrow.GetComponent<Transform>().localScale = new Vector3(1, 1, scale);
         }
         if (Input.GetKeyDown("a"))
         {
@@ -46,7 +48,7 @@ public class BallPhysics : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GetComponent<Rigidbody>().AddRelativeForce(0, 0, ForwardForce);
+        GetComponent<Rigidbody>().AddRelativeForce(0, 0, forwardForce);
         StartCoroutine(stopMovement());
     }
 

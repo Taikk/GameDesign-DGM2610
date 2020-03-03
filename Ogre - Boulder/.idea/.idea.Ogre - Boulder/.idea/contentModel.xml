@@ -7,40 +7,37 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="CameraController.cs" t="Include" />
-          <e p="CheckBoolData.cs" t="Include" />
           <e p="Damage" t="Include">
             <e p="DamageScript.cs" t="Include" />
+            <e p="Destroy.cs" t="Include" />
             <e p="Instantiate.cs" t="Include" />
           </e>
-          <e p="DataStorage" t="Include">
-            <e p="DataStorage.cs" t="Include" />
-          </e>
-          <e p="Debugger.cs" t="Include" />
-          <e p="Destroy.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
-          <e p="LookAtSO.cs" t="Include" />
-          <e p="Matching" t="Include">
-            <e p="Booldata.cs" t="Include" />
-            <e p="FloatData.cs" t="Include" />
-            <e p="FloatMathSystem.cs" t="Include" />
+          <e p="Events" t="Include">
+            <e p="EventAction.cs" t="Include" />
+          </e>
+          <e p="MatchBehaviours" t="Include">
             <e p="IdBehaviour.cs" t="Include" />
             <e p="MatchIdBehaviour.cs" t="Include" />
-            <e p="NameID.cs" t="Include" />
             <e p="ObjectID.cs" t="Include" />
-          </e>
-          <e p="positionTransformer.cs" t="Include" />
-          <e p="RigidController.cs" t="Include" />
-          <e p="ScriptableObjectScripts" t="Include">
-            <e p="Vector3Data.cs" t="Include" />
-          </e>
-          <e p="Transoformer.cs" t="Include" />
-          <e p="UnityEventStart.cs" t="Include" />
-          <e p="UnityEventUpdate.cs" t="Include" />
-          <e p="Vector3Follow.cs" t="Include" />
-          <e p="WorkSystems" t="Include">
-            <e p="WorkSystem.cs" t="Include" />
             <e p="WorkSystemManager.cs" t="Include" />
+          </e>
+          <e p="Movement" t="Include">
+            <e p="BallPhysics.cs" t="Include" />
+            <e p="CameraControls.cs" t="Include" />
+            <e p="PositionReset.cs" t="Include" />
+            <e p="RbControls.cs" t="Include" />
+          </e>
+          <e p="ScriptableObject" t="Include">
+            <e p="Booldata.cs" t="Include" />
+            <e p="DataStorage.cs" t="Include" />
+            <e p="Debugger.cs" t="Include" />
+            <e p="FloatData.cs" t="Include" />
+            <e p="FloatMathSystem.cs" t="Include" />
+            <e p="NameID.cs" t="Include" />
+            <e p="Vector3Data.cs" t="Include" />
+            <e p="Vector3Follow.cs" t="Include" />
+            <e p="WorkSystem.cs" t="Include" />
           </e>
         </e>
       </e>
