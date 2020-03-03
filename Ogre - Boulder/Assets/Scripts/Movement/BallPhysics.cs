@@ -54,9 +54,9 @@ public class BallPhysics : MonoBehaviour
 
     IEnumerator stopMovement()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        yield return new WaitForSeconds(.01f);
+        yield return new WaitForSeconds(.1f);
         transform.localEulerAngles = new Vector3 (0, 0, 0);
     }
 }
