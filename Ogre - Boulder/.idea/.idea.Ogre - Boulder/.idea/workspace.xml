@@ -14,7 +14,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/BallPhysics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/CameraControls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage/Instantiate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage/DamageScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -56,7 +57,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Matching/IdBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Matching/ObjectID.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Matching/MatchIDs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Matching/FloatMathSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Matching/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage/DamageScript.cs" />
@@ -67,6 +67,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/Vector3Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityEventStart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/BallPhysics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -83,7 +85,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,10 +107,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="3860">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="3860" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -143,6 +145,9 @@
       <workItem from="1582214844628" duration="1270000" />
       <workItem from="1582664503064" duration="1845000" />
       <workItem from="1583249898223" duration="992000" />
+      <workItem from="1583421777090" duration="1007000" />
+      <workItem from="1583426556608" duration="4580000" />
+      <workItem from="1583441694984" duration="188000" />
     </task>
     <servers />
   </component>
@@ -165,11 +170,45 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="445" y="161" key="SettingsEditor" timestamp="1581529097166">
-      <screen x="0" y="0" width="2560" height="1050" />
-    </state>
-    <state x="445" y="161" key="SettingsEditor/0.0.2560.1050@0.0.2560.1050" timestamp="1581529097166" />
-    <state x="445" y="161" key="SettingsEditor/1920.1080" timestamp="1581529092454" />
+    <state x="847" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" />
+    <state x="847" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.0.bottom" />
+    <state width="1340" height="328" key="GridCell.Tab.0.bottom/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.0.center" />
+    <state width="1340" height="328" key="GridCell.Tab.0.center/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.0.left" />
+    <state width="1340" height="328" key="GridCell.Tab.0.left/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.0.right" />
+    <state width="1340" height="328" key="GridCell.Tab.0.right/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.2.bottom" />
+    <state width="1340" height="328" key="GridCell.Tab.2.bottom/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.2.center" />
+    <state width="1340" height="328" key="GridCell.Tab.2.center/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.2.left" />
+    <state width="1340" height="328" key="GridCell.Tab.2.left/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.2.right" />
+    <state width="1340" height="328" key="GridCell.Tab.2.right/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.3.bottom" />
+    <state width="1340" height="328" key="GridCell.Tab.3.bottom/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.3.center" />
+    <state width="1340" height="328" key="GridCell.Tab.3.center/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.3.left" />
+    <state width="1340" height="328" key="GridCell.Tab.3.left/1920.1080" />
+    <state width="1340" height="328" key="GridCell.Tab.3.right" />
+    <state width="1340" height="328" key="GridCell.Tab.3.right/1920.1080" />
+    <state x="445" y="161" key="SettingsEditor" />
+    <state x="445" y="161" key="SettingsEditor/0.0.2560.1050@0.0.2560.1050" />
+    <state x="445" y="161" key="SettingsEditor/1920.1080" />
+    <state x="690" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" />
+    <state x="690" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

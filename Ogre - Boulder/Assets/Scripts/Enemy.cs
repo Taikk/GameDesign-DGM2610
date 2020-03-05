@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -25,11 +22,9 @@ public class Enemy : MonoBehaviour
 
     private void AttackTarget()
     {
-        if (trig == true && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Instantiate(projectilePreFab, transform.position + new Vector3(0, .8f, 0), Quaternion.identity);
-            Debug.Log(("Throw Object"));
-        }
+        if (trig != true || !(Time.time > nextFire)) return;
+        nextFire = Time.time + fireRate;
+        Instantiate(projectilePreFab, transform.position + new Vector3(0, .8f, 0), Quaternion.identity);
+        Debug.Log(("Throw Object"));
     }
 }

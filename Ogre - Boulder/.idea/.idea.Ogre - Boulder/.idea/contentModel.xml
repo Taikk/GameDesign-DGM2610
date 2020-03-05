@@ -23,8 +23,8 @@
             <e p="WorkSystemManager.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
-            <e p="BallPhysics.cs" t="Include" />
             <e p="CameraControls.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
             <e p="PositionReset.cs" t="Include" />
             <e p="RbControls.cs" t="Include" />
           </e>
