@@ -97,5 +97,6 @@ public class Movement : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         yield return new WaitForSeconds(.1f);
         transform.localEulerAngles = new Vector3(0, 0, 0);
+        //ignore me
     }
 }
