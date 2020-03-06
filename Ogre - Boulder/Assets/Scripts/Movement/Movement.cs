@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public float forwardForce;
     public float scale = 2;
     public Vector3 leftRotation, rightRotation;
-    public GameObject dirArrow;
+    public GameObject dirArrow, arrowRender;
 
     private void Update()
     {
@@ -88,15 +88,17 @@ public class Movement : MonoBehaviour
     private void OnMouseDown()
     {
         GetComponent<Rigidbody>().AddRelativeForce(0, 0, forwardForce);
+        arrowRender.GetComponent<Renderer>().enabled = false;
         StartCoroutine(StopMovement());
     }
 
     IEnumerator StopMovement()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(5);
         GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.01f);
+        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         transform.localEulerAngles = new Vector3(0, 0, 0);
-        //ignore me
+        arrowRender.GetComponent<Renderer>().enabled = true;
     }
 }

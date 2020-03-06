@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 941ba8aafbbe8444ca36ddd3a738f03f, type: 3}
-  m_Name: EnemyFloat
+  m_Script: {fileID: 11500000, guid: c20c6340d48a85d49b4835d451aa05b5, type: 3}
+  m_Name: WorkSystemDamage
   m_EditorClassIdentifier: 
-  value: 0
+  workIdList:
+  - nameIdObj: {fileID: 11400000, guid: 71c70dead910e2948b15c20fd8bf1efd, type: 2}
+    workSystemObj: {fileID: 11400000, guid: 2fb16bc4fcd94ff4b8690b703f6732eb, type: 2}
