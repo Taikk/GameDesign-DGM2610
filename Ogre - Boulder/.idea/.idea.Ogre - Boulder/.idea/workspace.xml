@@ -14,7 +14,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage/Instantiate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/ObjectID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/NameId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/IdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -68,6 +70,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/IdBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +140,7 @@
       <workItem from="1583441694984" duration="188000" />
       <workItem from="1583443880999" duration="3000" />
       <workItem from="1583444099675" duration="860000" />
-      <workItem from="1583513993368" duration="3776000" />
+      <workItem from="1583513993368" duration="4517000" />
     </task>
     <servers />
   </component>
