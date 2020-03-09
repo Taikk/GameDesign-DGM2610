@@ -31,6 +31,7 @@
             <e p="Booldata.cs" t="Include" />
             <e p="DataStorage.cs" t="Include" />
             <e p="Debugger.cs" t="Include" />
+            <e p="FloatChecker.cs" t="Include" />
             <e p="FloatData.cs" t="Include" />
             <e p="FloatMathSystem.cs" t="Include" />
             <e p="NameID.cs" t="Include" />

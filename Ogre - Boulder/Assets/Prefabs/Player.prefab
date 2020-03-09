@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 7189142111858653090}
   - component: {fileID: 7189142111858653092}
   - component: {fileID: 7189142111858653093}
+  - component: {fileID: 8445218005704530674}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -137,7 +138,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7189142111858653095}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 66.8, y: 7.09, z: -104.54}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -252,3 +253,52 @@ MonoBehaviour:
   rightRotation: {x: 0, y: -5, z: 0}
   dirArrow: {fileID: 7189142111169826442}
   arrowRender: {fileID: 7189142111215397371}
+--- !u!114 &8445218005704530674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189142111858653095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239088f369987e943b6776b7998ae4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameIdObj: {fileID: 11400000, guid: 92507472b0bfe18498eb98d845fdfc6a, type: 2}
+  nameIdList:
+  - nameIdObj: {fileID: 11400000, guid: e68947c56f83fdd4e9cf95933ec76f1e, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6afc3d4c5028bba47ab4110a468402bd, type: 2}
+          m_MethodName: UpdateValue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: f68f0fe30a4eaf540a2a40efcc33b83a,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: ad5aff5c034e7e14e884288261418a5f, type: 2}
+          m_MethodName: CheckFloatData
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: cae8e62d99300e441ae9604e9b05de02,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    stayEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null

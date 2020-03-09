@@ -18,6 +18,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/NameId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/IdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/FloatChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,8 +72,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/BallPhysics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/IdBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/FloatChecker.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +145,7 @@
       <workItem from="1583443880999" duration="3000" />
       <workItem from="1583444099675" duration="860000" />
       <workItem from="1583513993368" duration="4517000" />
+      <workItem from="1583775273451" duration="3308000" />
     </task>
     <servers />
   </component>
