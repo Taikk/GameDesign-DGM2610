@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\tyrel\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\tyrel\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Ogre - Boulder.-1652042005.00" t="ExcludeRecursive" />
-    <e p="E:\Spring-2020\GameDesign-DGM2610\Ogre - Boulder" t="IncludeRecursive">
+    <e p="C:\Users\tyrel\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Ogre - Boulder.-1837139949.00" t="ExcludeRecursive" />
+    <e p="C:\Users\tyrel\Desktop\Repo\GameDesign-DGM2610\Ogre - Boulder" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Anthony_Class_Scripts" t="Include">
+            <e p="Collectable.cs" t="Include" />
+            <e p="Collections.cs" t="Include" />
+            <e p="MonoBehaviours.cs" t="Include" />
+            <e p="OnTriggerBehaviour.cs" t="Include" />
+            <e p="WeaponCollectable.cs" t="Include" />
+          </e>
           <e p="Damage" t="Include">
             <e p="Destroy.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
@@ -39,6 +46,7 @@
             <e p="Vector3Follow.cs" t="Include" />
             <e p="WorkSystem.cs" t="Include" />
           </e>
+          <e p="timer.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

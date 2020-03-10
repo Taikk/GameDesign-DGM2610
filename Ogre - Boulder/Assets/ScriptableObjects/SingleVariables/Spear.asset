@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 941ba8aafbbe8444ca36ddd3a738f03f, type: 3}
-  m_Name: Health
+  m_Script: {fileID: 11500000, guid: 3fd018d104123a74c8d91eb612e071d0, type: 3}
+  m_Name: Spear
   m_EditorClassIdentifier: 
-  value: 0.9
+  useEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
