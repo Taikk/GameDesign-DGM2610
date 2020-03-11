@@ -10,7 +10,7 @@ public class MatchIdBehaviour : IdBehaviour
     public struct possibleMatch
     {
         public NameId nameIdObj;
-        public UnityEvent enterEvent, stayEvent;
+        public UnityEvent enterEvent, stayEvent, startEvent;
     }
     
     public List<possibleMatch> nameIdList;
@@ -36,6 +36,15 @@ public class MatchIdBehaviour : IdBehaviour
         otherIdObj = otherBehaviourObj.nameIdObj;
         CheckId(2);
     }
+    
+    private void OnTriggerStart(Collider other)
+    {
+        otherBehaviourObj = other.GetComponent<IdBehaviour>();
+        if ( otherBehaviourObj == null) return;
+        
+        otherIdObj = otherBehaviourObj.nameIdObj;
+        CheckId(3);
+    }
 
     private void CheckId(int other)
     {
@@ -50,6 +59,9 @@ public class MatchIdBehaviour : IdBehaviour
                         break;
                     case 2:
                         obj.stayEvent.Invoke();
+                        break;
+                    case 3:
+                        obj.startEvent.Invoke();
                         break;
                     default:
                         return;

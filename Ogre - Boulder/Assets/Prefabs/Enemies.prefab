@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4607090651340612243}
-  - component: {fileID: 4519979286082207422}
+  - component: {fileID: 1197603331758202617}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535873332306008107}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6932472481944302257}
-  m_RootOrder: 1
+  m_Father: {fileID: 2326823318991997272}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4519979286082207422
+--- !u!114 &1197603331758202617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,10 +40,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 535873332306008107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ba2d74caed412596fdc08aa5c90e98, type: 3}
+  m_Script: {fileID: 11500000, guid: fdc018a1633669c47a7b8928c04c3b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameIdObj: {fileID: 11400000, guid: 0da01304c303dbe49ac8d0af7302de76, type: 2}
+  nextFire: 0.5
+  fireRate: 0.5
+  forceAmnt: 5
+  prefabObj: {fileID: 8749195116482174014, guid: 441d9f86b3de02b47b2e5b607fe99485,
+    type: 3}
+  rb: {fileID: 784090612239300987, guid: 441d9f86b3de02b47b2e5b607fe99485, type: 3}
 --- !u!1 &2166584312775173175
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +80,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8055067968965189140}
-  - {fileID: 4607090651340612243}
+  - {fileID: 2326823318991997272}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138,6 +143,52 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3003739422462204055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2326823318991997272}
+  - component: {fileID: 7736458174509358453}
+  m_Layer: 0
+  m_Name: Pivot Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2326823318991997272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3003739422462204055}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.637, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4607090651340612243}
+  m_Father: {fileID: 6932472481944302257}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7736458174509358453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3003739422462204055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10681fa1f1c18de4a926940bd2794203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObj: {fileID: 7189142111858653095, guid: f72380952e782e446859f17fa18afc2d,
+    type: 3}
 --- !u!1 &6627253225991452412
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,17 +259,22 @@ MonoBehaviour:
     stayEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: c4c9b3059aba6f449a448524de618a04, type: 2}
-          m_MethodName: OnDebug
-          m_Mode: 5
+        - m_Target: {fileID: 1197603331758202617}
+          m_MethodName: Start
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: '"I''m Doing Damage" -Brando'
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
 --- !u!54 &1916840416536199885
