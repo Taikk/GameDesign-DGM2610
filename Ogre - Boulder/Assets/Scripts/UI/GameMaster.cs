@@ -8,6 +8,6 @@ public class GameMaster : MonoBehaviour
     public FloatData healthAmount, healthRestart;
     private void Start()
     {
-        healthAmount = healthRestart;
+        healthAmount.value = healthRestart.value;
     }
 }

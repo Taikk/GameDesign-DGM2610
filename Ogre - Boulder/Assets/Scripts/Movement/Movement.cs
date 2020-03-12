@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        // ReSharper disable once Unity.PerformanceCriticalCodeInvocation
         MovementInputs();
     }
     
@@ -23,9 +22,9 @@ public class Movement : MonoBehaviour
             forwardForce += 100f;
             scale += 1f;
 
-            if (forwardForce >= 300)
+            if (forwardForce >= 500)
             {
-                forwardForce = 300;
+                forwardForce = 500;
                 scale = 3;
             }
             
@@ -51,9 +50,9 @@ public class Movement : MonoBehaviour
             forwardForce += 10f;
             scale += .1f;
             
-            if (forwardForce >= 300)
+            if (forwardForce >= 500)
             {
-                forwardForce = 300;
+                forwardForce = 500;
                 scale = 3;
             }
             
