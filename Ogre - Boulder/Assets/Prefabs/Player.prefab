@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 7189142111858653092}
   - component: {fileID: 7189142111858653093}
   - component: {fileID: 8445218005704530674}
+  - component: {fileID: -175061423275116734}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -288,6 +289,48 @@ MonoBehaviour:
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11400000, guid: cae8e62d99300e441ae9604e9b05de02,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    stayEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!114 &-175061423275116734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189142111858653095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239088f369987e943b6776b7998ae4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameIdObj: {fileID: 11400000, guid: 92507472b0bfe18498eb98d845fdfc6a, type: 2}
+  nameIdList:
+  - nameIdObj: {fileID: 11400000, guid: 3b3342ed5b3d62e4cb4d8b6a12a1bc21, type: 2}
+    enterEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 462d678fb2384a941b985dab334f077f, type: 2}
+          m_MethodName: UpdateValue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: bf663de489396d440a2d3a6a44532cf1,
               type: 2}
             m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
             m_IntArgument: 0

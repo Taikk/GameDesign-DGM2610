@@ -22,7 +22,6 @@
           <e p="Damage" t="Include">
             <e p="Destroy.cs" t="Include" />
             <e p="DestroySO.cs" t="Include" />
-            <e p="HealthUI.cs" t="Include" />
             <e p="Instantiate.cs" t="Include" />
           </e>
           <e p="Events" t="Include">
@@ -56,6 +55,8 @@
           </e>
           <e p="UI" t="Include">
             <e p="GameMaster.cs" t="Include" />
+            <e p="HealthUI.cs" t="Include" />
+            <e p="ScoreCounter.cs" t="Include" />
             <e p="timer.cs" t="Include" />
           </e>
         </e>
