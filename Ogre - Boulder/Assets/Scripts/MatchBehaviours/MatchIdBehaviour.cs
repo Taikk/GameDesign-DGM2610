@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 public class MatchIdBehaviour : IdBehaviour
 {
@@ -10,7 +9,7 @@ public class MatchIdBehaviour : IdBehaviour
     public struct possibleMatch
     {
         public NameId nameIdObj;
-        public UnityEvent enterEvent, stayEvent, startEvent;
+        public UnityEvent enterEvent, stayEvent, exitEvent, startEvent;
     }
     
     public List<possibleMatch> nameIdList;
@@ -27,8 +26,8 @@ public class MatchIdBehaviour : IdBehaviour
         otherIdObj = otherBehaviourObj.nameIdObj;
         CheckId(1);
     }
-    
-    private void OnTriggerStay(Collider other)
+
+    private void OnTriggerExit(Collider other)
     {
         otherBehaviourObj = other.GetComponent<IdBehaviour>();
         if ( otherBehaviourObj == null) return;
@@ -36,8 +35,7 @@ public class MatchIdBehaviour : IdBehaviour
         otherIdObj = otherBehaviourObj.nameIdObj;
         CheckId(2);
     }
-    
-    private void OnTriggerStart(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         otherBehaviourObj = other.GetComponent<IdBehaviour>();
         if ( otherBehaviourObj == null) return;
@@ -45,7 +43,6 @@ public class MatchIdBehaviour : IdBehaviour
         otherIdObj = otherBehaviourObj.nameIdObj;
         CheckId(3);
     }
-
     private void CheckId(int other)
     {
         foreach (var obj in nameIdList)
@@ -58,10 +55,10 @@ public class MatchIdBehaviour : IdBehaviour
                         obj.enterEvent.Invoke();
                         break;
                     case 2:
-                        obj.stayEvent.Invoke();
+                        obj.exitEvent.Invoke();
                         break;
                     case 3:
-                        obj.startEvent.Invoke();
+                        obj.stayEvent.Invoke();
                         break;
                     default:
                         return;
@@ -69,5 +66,4 @@ public class MatchIdBehaviour : IdBehaviour
             }
         }
     }
-    
 }

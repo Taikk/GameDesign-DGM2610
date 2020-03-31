@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.XR.WSA.Input;
 
 public class GameMaster : MonoBehaviour
 {
-    public FloatData healthAmount, healthRestart;
+    public UnityEvent StartEvent;
     private void Start()
     {
-        healthAmount.value = healthRestart.value;
+        StartEvent.Invoke();
     }
 }
