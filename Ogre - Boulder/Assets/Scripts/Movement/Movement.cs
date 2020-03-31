@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float forwardForce;
-    public float scale = 2;
+    public float forwardForce, scale = 2, maxForce, minForce, minScale, maxScale;
     public Vector3 leftRotation, rightRotation;
     public GameObject dirArrow, arrowRender;
 
@@ -13,19 +12,18 @@ public class Movement : MonoBehaviour
     {
         MovementInputs();
     }
-    
 
     private void MovementInputs()
     {
         if (Input.GetKeyDown("q"))
         {
-            forwardForce += 100f;
-            scale += 1f;
+            forwardForce += 200f;
+            scale += .5f;
 
-            if (forwardForce >= 500)
+            if (forwardForce >= maxForce)
             {
-                forwardForce = 500;
-                scale = 3;
+                forwardForce = maxForce;
+                scale = maxScale;
             }
             
             dirArrow.GetComponent<Transform>().localScale = new Vector3(2, 2, scale);
@@ -33,13 +31,13 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown("w"))
         {
-            forwardForce -= 100f;
-            scale -= 1f;
+            forwardForce -= 200f;
+            scale -= .5f;
             
-            if (forwardForce <= 0)
+            if (forwardForce <= minForce)
             {
-                forwardForce = 0;
-                scale = 1;
+                forwardForce = minForce;
+                scale = minScale;
             }
             
             dirArrow.GetComponent<Transform>().localScale = new Vector3(2,2, scale);
@@ -47,13 +45,13 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown("e"))
         {
-            forwardForce += 10f;
-            scale += .1f;
+            forwardForce += 100f;
+            scale += .25f;
             
-            if (forwardForce >= 500)
+            if (forwardForce >= maxForce)
             {
-                forwardForce = 500;
-                scale = 3;
+                forwardForce = maxForce;
+                scale = maxScale;
             }
             
             dirArrow.GetComponent<Transform>().localScale = new Vector3(2,2, scale);
@@ -61,13 +59,13 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown("r"))
         {
-            forwardForce -= 10f;
-            scale -= .1f;
+            forwardForce -= 100f;
+            scale -= .25f;
             
-            if (forwardForce <= 0)
+            if (forwardForce <= minForce)
             {
-                forwardForce = 0;
-                scale = 1;
+                forwardForce = minForce;
+                scale = minScale;
             }
             
             dirArrow.GetComponent<Transform>().localScale = new Vector3(2,2, scale);
