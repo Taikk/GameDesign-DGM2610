@@ -84,9 +84,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/Character/CharacterMoveAndRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScoreCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScoreUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameMaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/LookAt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameMaster.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +178,7 @@
       <workItem from="1584027589089" duration="5605000" />
       <workItem from="1585166700489" duration="599000" />
       <workItem from="1585335422843" duration="524000" />
-      <workItem from="1585671772608" duration="3885000" />
+      <workItem from="1585671772608" duration="5705000" />
     </task>
     <servers />
   </component>
