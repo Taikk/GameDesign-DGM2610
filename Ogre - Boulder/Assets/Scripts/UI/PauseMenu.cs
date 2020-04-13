@@ -6,6 +6,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    private GameObject move;
 
     public void Update()
     {
@@ -15,10 +16,12 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
+                move.GetComponent<MouseLookAt>().enabled = true;
             }
             else
             {
                 Pause();
+                move.GetComponent<MouseLookAt>().enabled = false;
             }
         }
     }

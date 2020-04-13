@@ -12,7 +12,6 @@ public class MouseLookAt : MonoBehaviour
         ForceStrength();
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("Click");
             GetComponent<Rigidbody>().AddRelativeForce(0f, 0f, movement);
             arrowRender.GetComponent<Renderer>().enabled = false;
             StartCoroutine(StopMovement());
@@ -30,7 +29,6 @@ public class MouseLookAt : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q))
         {
-            Debug.Log("Q Pressed");
             movement += forceAdd;
             scale += 0.5f;
             if (movement >= maxValue)

@@ -122,9 +122,9 @@ GameObject:
   - component: {fileID: 7189142111858653091}
   - component: {fileID: 7189142111858653090}
   - component: {fileID: 7189142111858653092}
-  - component: {fileID: 7189142111858653093}
   - component: {fileID: 8445218005704530674}
   - component: {fileID: -175061423275116734}
+  - component: {fileID: -164254880871844141}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -236,28 +236,6 @@ MonoBehaviour:
   ResetZone: 0.5
   rb: {fileID: 7189142111858653091}
   objectData: {fileID: 11400000, guid: ccc34f98ddbca3d4ca401ab6a8f6fc81, type: 2}
---- !u!114 &7189142111858653093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7189142111858653095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 031692b13a074a10835cf250faab7b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardForce: 0
-  scale: 1
-  maxForce: 1000
-  minForce: 0
-  minScale: 1
-  maxScale: 5
-  leftRotation: {x: 0, y: 5, z: 0}
-  rightRotation: {x: 0, y: -5, z: 0}
-  dirArrow: {fileID: 7189142111169826442}
-  arrowRender: {fileID: 7189142111215397371}
 --- !u!114 &8445218005704530674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,3 +342,24 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+--- !u!114 &-164254880871844141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189142111858653095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685026e125e03f843a18ec6add2386c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: 0
+  scale: 1
+  maxValue: 300
+  minValue: 0
+  maxScale: 5
+  minScale: 0
+  forceAdd: 50
+  dirArrow: {fileID: 7189142111169826443}
+  arrowRender: {fileID: 7189142111215397371}
