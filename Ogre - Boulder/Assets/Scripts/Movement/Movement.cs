@@ -91,11 +91,7 @@ public class Movement : MonoBehaviour
 
     IEnumerator StopMovement()
     {
-        yield return new WaitForSeconds(5);
-        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        yield return new WaitForSeconds(.01f);
-        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        transform.localEulerAngles = new Vector3(0, 0, 0);
+        yield return new WaitForSeconds(4);
         arrowRender.GetComponent<Renderer>().enabled = true;
     }
 }

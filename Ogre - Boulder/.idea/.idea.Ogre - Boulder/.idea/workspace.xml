@@ -12,7 +12,6 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Experimental/MouseLookAt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/FloatChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/Character/CharacterBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/Character/CharacterMoveAndRotate.cs" root0="FORCE_HIGHLIGHTING" />
@@ -21,13 +20,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage/Destroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/Collections.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Experimental/MouseLookAt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/Collectable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/MonoBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anthony_Class_Scripts/WeaponCollectable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/ObjectID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/IdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/NameId.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -82,8 +82,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/LookAt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MatchBehaviours/MatchIdBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameMaster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Experimental/MouseLookAt.cs" />
       </list>
     </option>
@@ -179,6 +179,7 @@
       <workItem from="1585671772608" duration="9431000" />
       <workItem from="1586448935720" duration="2627000" />
       <workItem from="1586648857151" duration="1039000" />
+      <workItem from="1586735420264" duration="4008000" />
     </task>
     <servers />
   </component>
@@ -201,9 +202,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1724" y="181" key="#Notifications" timestamp="1585681136921">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="722" y="143" key="#Notifications" timestamp="1586735798731">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="722" y="143" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1586735798731" />
     <state x="1724" y="181" key="#Notifications/0.0.2560.1040@0.0.2560.1040" timestamp="1585681136921" />
     <state x="847" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583863578096" />
     <state x="847" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.1080" timestamp="1583863578096" />
@@ -247,6 +249,10 @@
     <state x="445" y="161" key="SettingsEditor/1920.1080" timestamp="1583863578096" />
     <state x="690" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583863578096" />
     <state x="690" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.1080" timestamp="1583863578096" />
+    <state x="66" y="11" width="698" height="807" key="dock-window-1" timestamp="1586737494699">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="66" y="11" width="698" height="807" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1586737494699" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1584036262310">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
