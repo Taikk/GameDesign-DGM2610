@@ -1,18 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class RestartGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public FloatData healthAmount;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (healthAmount.value <= 0)
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
     }
 }

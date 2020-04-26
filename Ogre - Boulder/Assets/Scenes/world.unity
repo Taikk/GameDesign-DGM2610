@@ -1213,6 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f8f0245ba008e4ab3e86702ebe7d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthAmount: {fileID: 11400000, guid: 6afc3d4c5028bba47ab4110a468402bd, type: 2}
 --- !u!1001 &209187113
 PrefabInstance:
   m_ObjectHideFlags: 0

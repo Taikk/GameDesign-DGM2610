@@ -366,10 +366,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: 0
-  scale: 1
+  scale: 0.5
   maxValue: 50
   minValue: 0
-  maxScale: 5
+  maxScale: 2
   minScale: 0
   forceAdd: 10
   dirArrow: {fileID: 7189142111169826443}
