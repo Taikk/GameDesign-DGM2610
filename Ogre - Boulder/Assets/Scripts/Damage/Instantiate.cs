@@ -8,14 +8,10 @@ public class Instantiate : MonoBehaviour
     public GameObject prefabObj;
     public Rigidbody rb;
 
-    public void Start()
-    {
-        ObjectInstance();
-    }
+    public void Start() => ObjectInstance();
 
     private void ObjectInstance()
     {
-        
         if (Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;

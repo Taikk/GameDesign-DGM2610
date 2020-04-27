@@ -19,14 +19,8 @@ public class MouseLookAt : MonoBehaviour
         }
 
         RaycastHit hit;
-        
         ray = Camera.current.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit, 100))
-        { 
-
-            transform.LookAt(hit.point);
-        }
+        if (Physics.Raycast(ray, out hit, 100)) transform.LookAt(hit.point);
     }
 
     private void ForceStrength()
@@ -61,6 +55,6 @@ public class MouseLookAt : MonoBehaviour
     IEnumerator StopMovement()
     {
         yield return new WaitForSeconds(4);
-        arrowRender.GetComponent<Renderer>().enabled = true;
+        yield return arrowRender.GetComponent<Renderer>().enabled = true;
     }
 }
