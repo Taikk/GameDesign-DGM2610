@@ -6,6 +6,7 @@ public class MouseLookAt : MonoBehaviour
     public float movement, scale, maxValue, minValue, maxScale, minScale, forceAdd;
     public Transform dirArrow;
     public GameObject arrowRender;
+    private Ray ray;
 
     private void Update()
     {
@@ -18,9 +19,12 @@ public class MouseLookAt : MonoBehaviour
         }
 
         RaycastHit hit;
-        var ray = Camera.current.ScreenPointToRay(Input.mousePosition);
+        
+        ray = Camera.current.ScreenPointToRay(Input.mousePosition);
+
         if (Physics.Raycast(ray, out hit, 100))
-        {
+        { 
+
             transform.LookAt(hit.point);
         }
     }
